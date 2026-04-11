@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS3189 Portfolio | ChillHea</title>
+  <meta name="description" content="ChillHea CS3189 portfolio: problem statement, G1 research, G2 design/prototyping, G3 evaluation, and final prototype." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="chill">Chill</span><span class="hea">Hea</span></a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">Menu</button>
+    <nav id="mainNav">
+      <a href="#problem">Problem</a>
+      <a href="#g1">G1</a>
+      <a href="#g2">G2</a>
+      <a href="#g3">G3</a>
+      <a href="#prototype">Prototype</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="gallery-strip reveal" aria-label="Hong Kong inspiration gallery">
+      <div class="gallery-track" data-draggable-gallery>
+        <figure class="gallery-card"><img src="hk1.jpg" alt="Hong Kong visual 1" /></figure>
+        <figure class="gallery-card"><img src="hk2.jpg" alt="Hong Kong visual 2" /></figure>
+        <figure class="gallery-card"><img src="hk3.jpg" alt="Hong Kong visual 3" /></figure>
+        <figure class="gallery-card"><img src="hk4.jpg" alt="Hong Kong visual 4" /></figure>
+        <figure class="gallery-card"><img src="hk5.jpg" alt="Hong Kong visual 5" /></figure>
+        <figure class="gallery-card"><img src="hk6.jpg" alt="Hong Kong visual 6" /></figure>
+        <figure class="gallery-card"><img src="hk7.jpg" alt="Hong Kong visual 7" /></figure>
+      </div>
+    </section>
+    <div class="top-divider" aria-hidden="true"></div>
+
+    <section class="hero reveal">
+      <p class="date">CS3189 • 2026</p>
+      <h1>User-centred Portfolio:<br />Enhancing leisure-place search in Hong Kong</h1>
+      <p class="subtitle">
+        From user research to final prototype, this portfolio documents how our team designed a calmer, more reliable
+        place-discovery experience for users under stress.
+      </p>
+      <a class="cta" href="#problem">Explore the project</a>
+    </section>
+
+    <section class="visual-band reveal">
+      <img src="mockup.png" alt="ChillHea app mockup screens" />
+    </section>
+
+    <section id="problem" class="story reveal">
+      <div class="story-copy">
+        <p class="kicker">Problem Statement</p>
+        <h2>Why this project exists</h2>
+        <p>
+          Hong Kong users with heavy work or study pressure often want restorative breaks, but current search channels
+          are noisy, generic, and inconsistent. This creates planning stress instead of relief.
+        </p>
+        <p>
+          Our design goal was to create an app that helps users discover genuinely suitable leisure places through
+          trustworthy data, route certainty, and low-effort planning support.
+        </p>
+      </div>
+      <aside class="story-note">
+        <h3>Target users</h3>
+        <ul>
+          <li>People seeking quiet escapes during limited free time.</li>
+          <li>Users requiring accurate and up-to-date place information.</li>
+          <li>Users who value low-crowd, nature-oriented environments.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="between-banner reveal" aria-label="Hong Kong travel guide background">
+      <img src="hongkong-travel-guide-bg.jpg" alt="Hong Kong travel guide scenic background" />
+    </section>
+
+    <section id="g1" class="block reveal">
+      <p class="kicker">G1 · User Research & Analysis</p>
+      <h2>User research process</h2>
+      <p>
+        We conducted contextual inquiries with 3 target users (30-45 minutes each), observing real mobile search
+        behaviour, decision criteria, and pain points in realistic contexts.
+      </p>
+      <div class="research-insights">
+        <div class="insight-pair">
+          <article class="insight-item">
+            <span class="insight-no">01</span>
+            <h3>P1 · Freelancer</h3>
+            <p>Needed quiet environments and accurate opening/crowd information. Highlighted trust breakdown from outdated data.</p>
+          </article>
+          <article class="insight-item justification-card">
+            <h3>Justification 1</h3>
+            <p>Reliable, rich place details were prioritized because trust was repeatedly identified as a key adoption factor.</p>
+          </article>
+        </div>
+
+        <div class="insight-pair">
+          <article class="insight-item">
+            <span class="insight-no">02</span>
+            <h3>P2 · Student + part-time worker</h3>
+            <p>Relied on social content but often found major mismatch between online impressions and real atmosphere.</p>
+          </article>
+          <article class="insight-item justification-card">
+            <h3>Justification 2</h3>
+            <p>Map and route assistance were treated as core features to reduce uncertainty and emotional friction.</p>
+          </article>
+        </div>
+
+        <div class="insight-pair">
+          <article class="insight-item">
+            <span class="insight-no">03</span>
+            <h3>P3 · Operations assistant</h3>
+            <p>Required route precision and companionship support; surfaced safety and planning-anxiety concerns.</p>
+          </article>
+          <article class="insight-item justification-card">
+            <h3>Justification 3</h3>
+            <p>Planner and personalization functions were selected to reduce cognitive effort for users with low free time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="g2" class="block alt reveal">
+      <p class="kicker">G2 · Design & Prototyping</p>
+      <h2>Design and prototyping process</h2>
+      <div class="cards two">
+        <article>
+          <h3>Scenario-driven design</h3>
+          <ul>
+            <li>Fast discovery of calm cafes during short breaks.</li>
+            <li>Shared planning for friend day trips via calendar flow.</li>
+            <li>Recommendation support with nearby facilities and crowd awareness.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Core tasks</h3>
+          <ul>
+            <li>Curated place search with maps, reviews, and contextual details.</li>
+            <li>Community hub for practical peer feedback.</li>
+            <li>Beforehand planning to cut decision time.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="cards three">
+        <article>
+          <h3>Layout clarity</h3>
+          <p>We reduced crowding and improved hierarchy after internal wireframe critique.</p>
+        </article>
+        <article>
+          <h3>Findability</h3>
+          <p>Important actions and filters were made more visible to support task completion speed.</p>
+        </article>
+        <article>
+          <h3>Planning flow</h3>
+          <p>Route timeline and friend invitation mechanics were refined to lower coordination friction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="g3" class="timeline-section reveal">
+      <p class="kicker">G3 · Evaluation & Final Prototype</p>
+      <h2>Evaluation findings and impact</h2>
+      <div class="milestones">
+        <article>
+          <h3>High severity</h3>
+          <p>Critical actions like navigation were sometimes missed in long-scroll pages.</p>
+          <p>Safety gap: no clear off-course emergency support for remote exploration.</p>
+        </article>
+        <article>
+          <h3>Medium severity</h3>
+          <p>Comment content and map scale affected quick judgment and orientation confidence.</p>
+        </article>
+        <article>
+          <h3>Implemented changes</h3>
+          <p>Persistent navigation + pinned CTAs, assistance interface, and unified visual design system.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="prototype" class="block reveal">
+      <p class="kicker">Final Deliverables</p>
+      <h2>Prototype and portfolio materials</h2>
+      <div class="links">
+        <a href="https://www.figma.com/design/X2yOKrSBP6g5zxJiwxLkQt/G2_Final-Interactive-Prototype?t=XKE94BRphI8QPBz4-1" target="_blank" rel="noreferrer">Final Interactive Prototype</a>
+        <a href="https://canva.link/onkozwfm7aersmv" target="_blank" rel="noreferrer">Reflective Design Notebook</a>
+        <a href="https://canva.link/ct60955bdainzb5" target="_blank" rel="noreferrer">Presentation Slides</a>
+        <a href="https://www.figma.com/design/Vzf7FeBEHnPqsi0kjDyjGT/Untitled?node-id=0-1&t=XBWm60jnrLO2oU7g-1" target="_blank" rel="noreferrer">Affinity Diagram</a>
+      </div>
+    </section>
+
+    <section id="reflection" class="story reveal">
+      <div class="story-copy">
+        <p class="kicker">Reflection</p>
+        <h2>What we learned and next steps</h2>
+        <p>
+          The strongest outcome was alignment between real user pain points and iteration priorities. Research led us to
+          emphasize trust, safety, and discoverability rather than only adding features.
+        </p>
+      </div>
+      <aside class="story-note">
+        <h3>Next improvements</h3>
+        <ul>
+          <li>Improve live trust signals for opening status and crowd confidence.</li>
+          <li>Deepen emergency-flow testing with route deviation simulations.</li>
+          <li>Expand accessibility support for varied usage contexts.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>CS3189 User-centred Interactive Design · ChillHea Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
